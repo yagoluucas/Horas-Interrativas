@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas Interativas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/21d0236917.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="imagens/icons8-clock-50.png" type="image/x-icon">
+</head>
+<div id="fundo">
+
+    <body>
+        <main>
+            <section id="container_informacao">
+                <h1>Qual é o horario atual da região que voce está ?</h1>
+                <input type="number" name="horario" id="horario" placeholder="Digite um valor entre 0 e 23" min="0"
+                    max="23">
+                <input type="submit" value="Exibir Resultado" id="botao" onclick="exibir()">
+                <p class="autor">&copy;Yago Lucas. Todos os Direitos Reservados</p>
+            </section>
+
+            <section id="container_horario">
+                <h1>Tenha <span id="comprimento"></span></h1>
+                <p id="p_mensagem"></p>
+                <p id="p_comprimento"></p>
+                <a href="index.html"><i class="fa-solid fa-rotate-right fa-flip-horizontal fa-2xl"></i></i></a>
+                <p class="autor">&copy;Yago Lucas. Todos os Direitos Reservados</p>
+            </section>
+
+            <section id="container_erro">
+                <h1>Parece que voce digitou um horario <strong>Invalido</strong></h1>
+                <p>Vamos tentar denovo ?</p>
+                <p>Clique no icone abaixo para recarregar a pagina</p>
+                <a href="index.html"><i class="fa-solid fa-rotate-right fa-flip-horizontal fa-2xl"></i></i></a>
+                <p class="autor">&copy;Yago Lucas. Todos os Direitos Reservados</p>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</div>
+
+</html>
